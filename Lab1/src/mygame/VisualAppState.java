@@ -4,10 +4,6 @@ import com.jme3.app.Application;
 import com.jme3.app.SimpleApplication;
 import com.jme3.app.state.AbstractAppState;
 import com.jme3.app.state.AppStateManager;
-import com.jme3.asset.AssetManager;
-import com.jme3.input.MouseInput;
-import com.jme3.input.controls.AnalogListener;
-import com.jme3.input.controls.MouseAxisTrigger;
 import com.jme3.light.DirectionalLight;
 import com.jme3.math.FastMath;
 import com.jme3.math.Quaternion;
@@ -44,6 +40,7 @@ public class VisualAppState extends AbstractAppState {
         myTorpedo = modelFactory.create("Torpedo/Torpedo");
         myTorpedo.rotate(FastMath.HALF_PI, 0, 0);
         myTorpedo.setLocalScale((float)0.1, (float)0.1, (float)0.1);
+        myTorpedo.setLocalTranslation( -4, -4, 0);
 
         this.app.getRootNode().attachChild(myVisual);
         this.app.getRootNode().attachChild(myTorpedo);
@@ -65,11 +62,6 @@ public class VisualAppState extends AbstractAppState {
         Quaternion position = new Quaternion();
         position.fromAngles(FastMath.HALF_PI, 0, FastMath.PI/2 + FastMath.atan2(dY, dX));
         myVisual.setLocalRotation(position);
-        //myVisual.rotate(0, FastMath.PI/2 + FastMath.atan2(dY, dX), 0);
-    }
-
-    @Override
-    public void cleanup() {
     }
  
     @Override
