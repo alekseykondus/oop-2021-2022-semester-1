@@ -11,6 +11,7 @@ import com.jme3.math.Vector2f;
 import com.jme3.math.Vector3f;
 import com.jme3.scene.Spatial;
 import com.jme3.util.SkyFactory;
+import java.util.Random;
  
 public class VisualAppState extends AbstractAppState {
     private SimpleApplication app;
@@ -40,7 +41,10 @@ public class VisualAppState extends AbstractAppState {
         myTorpedo = modelFactory.create("Torpedo/Torpedo");
         myTorpedo.rotate(FastMath.HALF_PI, 0, 0);
         myTorpedo.setLocalScale((float)0.1, (float)0.1, (float)0.1);
-        myTorpedo.setLocalTranslation( -4, -4, 0);
+        
+        Random rand = new Random();
+
+        myTorpedo.setLocalTranslation( (int)((rand.nextBoolean()==true)?1:(-1))*4, (int)((rand.nextBoolean()==true)?1:(-1))*4, 0);
 
         this.app.getRootNode().attachChild(myVisual);
         this.app.getRootNode().attachChild(myTorpedo);
