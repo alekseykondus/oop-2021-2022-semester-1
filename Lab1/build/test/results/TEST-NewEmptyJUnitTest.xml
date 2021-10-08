@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<testsuite errors="0" failures="0" hostname="User-PC" name="NewEmptyJUnitTest" skipped="0" tests="2" time="0.48" timestamp="2021-10-08T21:28:36">
+  <properties>
+    <property name="javac.test.classpath" value="C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-jogg-3.3.0-stable.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\j-ogg-all-1.0.0.jar:C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-networking-3.3.0-stable.jar:C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-plugins-3.3.0-stable.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\gson-2.8.1.jar:C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-core-3.3.0-stable.jar:C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-desktop-3.3.0-stable.jar:C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-lwjgl-3.3.0-stable.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\lwjgl-2.9.3.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jinput-2.0.5.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jinput-platform-2.0.5-natives-linux.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jinput-platform-2.0.5-natives-windows.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jinput-platform-2.0.5-natives-osx.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jutils-1.0.0.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\lwjgl-platform-2.9.3-natives-windows.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\lwjgl-platform-2.9.3-natives-linux.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\lwjgl-platform-2.9.3-natives-osx.jar:C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-effects-3.3.0-stable.jar:C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-terrain-3.3.0-stable.jar:C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-bullet-3.3.0-stable.jar:C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-bullet-native-3.3.0-stable.jar:C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-testdata.jar:D:\Downloads\jar_files\mockito-all-1.10.19.jar:build/classes:C:\Program Files\jmonkeyplatform\platform\modules\ext\junit-4.12.jar:C:\Program Files\jmonkeyplatform\platform\modules\ext\hamcrest-core-1.3.jar" />
+    <property name="java.specification.version" value="11" />
+    <property name="jar.index.metainf" value="false" />
+    <property name="test.binaryincludes" value="&lt;nothing&gt;" />
+    <property name="libs.jme3-plugins.maven-pom" value="" />
+    <property name="debug-transport" value="dt_shmem" />
+    <property name="do.jlink" value="false" />
+    <property name="java.vendor.url" value="https://adoptopenjdk.net/" />
+    <property name="libs.jme3-jogg.javadoc" value="" />
+    <property name="file.reference.mockito-all-1.10.19.jar" value="D:\Downloads\jar_files\mockito-all-1.10.19.jar" />
+    <property name="debug.modulepath" value="" />
+    <property name="libs.JWSAntTasks.javadoc" value="" />
+    <property name="libs.jme3-core.javadoc" value="" />
+    <property name="sun.boot.library.path" value="C:\Program Files\jmonkeyplatform\jdk\bin" />
+    <property name="sun.java.command" value="org.apache.tools.ant.taskdefs.optional.junit.JUnitTestRunner NewEmptyJUnitTest skipNonTests=false filtertrace=true haltOnError=false haltOnFailure=false showoutput=true outputtoformatters=true logfailedtests=true threadid=0 logtestlistenerevents=true formatter=org.apache.tools.ant.taskdefs.optional.junit.BriefJUnitResultFormatter formatter=org.apache.tools.ant.taskdefs.optional.junit.XMLJUnitResultFormatter,D:\User\JMonkey\BasicGame1\build\test\results\TEST-NewEmptyJUnitTest.xml crashfile=D:\User\JMonkey\BasicGame1\build\junitvmwatcher16041032656188563198.properties propsfile=D:\User\JMonkey\BasicGame1\build\junit6990127549083509691.properties" />
+    <property name="jdk.debug" value="release" />
+    <property name="javadoc.use" value="true" />
+    <property name="libs.javac-api.maven-pom" value="" />
+    <property name="javadoc.notree" value="false" />
+    <property name="libs.jme3-jogl.maven-pom" value="" />
+    <property name="basedir" value="D:\User\JMonkey\BasicGame1" />
+    <property name="application.vendor" value="MyCompany" />
+    <property name="libs.pro-guard.javadoc" value="" />
+    <property name="java.vm.specification.vendor" value="Oracle Corporation" />
+    <property name="java.specification.name" value="Java Platform API Specification" />
+    <property name="libs.unspecified.src" value="" />
+    <property name="ant.file.assets-impl" value="D:\User\JMonkey\BasicGame1\nbproject\assets-impl.xml" />
+    <property name="libs.javac-api.javadoc" value="" />
+    <property name="libs.jme3-android.javadoc" value="" />
+    <property name="libs.jme3-networking.maven-pom" value="" />
+    <property name="libs.jme3-effects.maven-pom" value="" />
+    <property name="libs.jme3_xbuf.javadoc" value="" />
+    <property name="libs.javahelp.javadoc" value="" />
+    <property name="netbeans.default_userdir_root" value="C:\Users\Professional\AppData\Roaming\jmonkeyplatform" />
+    <property name="jdk.home" value="jdk" />
+    <property name="java.runtime.version" value="11.0.6+10" />
+    <property name="libs.pro-guard.maven-pom" value="" />
+    <property name="libs.JAXB-ENDORSED.javadoc" value="" />
+    <property name="libs.jme3-ios.javadoc" value="" />
+    <property name="libs.jme3-test-data.src" value="" />
+    <property name="libs.jme3-blender.maven-pom" value="" />
+    <property name="libs.lwjgl-applet.classpath" value="C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\applet-loader.zip" />
+    <property name="libs.jme3-plugins.src" value="" />
+    <property name="jnidispatch.path" value="C:\Users\PROFES~1\AppData\Local\Temp\jna-1039397447\jna18180832090101404252.dll" />
+    <property name="libs.groovy-all.maven-pom" value="" />
+    <property name="java.vendor.version" value="AdoptOpenJDK" />
+    <property name="libs.junit_5.javadoc" value="C:\Program Files\jmonkeyplatform\platform\docs\junit-jupiter-api-5.6.0-javadoc.jar;C:\Program Files\jmonkeyplatform\platform\docs\junit-jupiter-params-5.6.0-javadoc.jar;C:\Program Files\jmonkeyplatform\platform\docs\junit-jupiter-engine-5.6.0-javadoc.jar" />
+    <property name="jnlp.enabled" value="false" />
+    <property name="java.io.tmpdir" value="C:\Users\PROFES~1\AppData\Local\Temp\" />
+    <property name="java.version" value="11.0.6" />
+    <property name="libs.Heart.javadoc" value="" />
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification" />
+    <property name="libs.hamcrest.src" value="" />
+    <property name="java.library.path" value="C:\Program Files\jmonkeyplatform\jdk\bin;C:\Windows\Sun\Java\bin;C:\Windows\system32;C:\Windows;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\doxygen\bin;C;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\dotnet\;C:\Program Files\Git\cmd;C:\Users\Professional\AppData\Local\Microsoft\WindowsApps;C:\Users\Professional\AppData\Local\GitHubDesktop\bin;C:\Program Files (x86)\mingw64\bin;;C:\Users\Professional\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Professional\.dotnet\tools;." />
+    <property name="java.vendor" value="AdoptOpenJDK" />
+    <property name="ant.file.Catch-up-impl" value="D:\User\JMonkey\BasicGame1\nbproject\build-impl.xml" />
+    <property name="libs.groovy-all.src" value="" />
+    <property name="libs.testng.javadoc" value="C:\Program Files\jmonkeyplatform\platform\docs\testng-6.8.1-javadoc.zip" />
+    <property name="meta.inf.dir" value="src/META-INF" />
+    <property name="libs.javahelp.maven-pom" value="" />
+    <property name="compile.on.save" value="true" />
+    <property name="libs.jme3-desktop.maven-pom" value="" />
+    <property name="libs.testng.maven-pom" value="" />
+    <property name="org.openide.version" value="deprecated" />
+    <property name="test.includes" value="NewEmptyJUnitTest.java" />
+    <property name="run.classpath" value="C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-jogg-3.3.0-stable.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\j-ogg-all-1.0.0.jar:C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-networking-3.3.0-stable.jar:C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-plugins-3.3.0-stable.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\gson-2.8.1.jar:C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-core-3.3.0-stable.jar:C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-desktop-3.3.0-stable.jar:C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-lwjgl-3.3.0-stable.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\lwjgl-2.9.3.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jinput-2.0.5.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jinput-platform-2.0.5-natives-linux.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jinput-platform-2.0.5-natives-windows.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jinput-platform-2.0.5-natives-osx.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jutils-1.0.0.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\lwjgl-platform-2.9.3-natives-windows.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\lwjgl-platform-2.9.3-natives-linux.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\lwjgl-platform-2.9.3-natives-osx.jar:C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-effects-3.3.0-stable.jar:C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-terrain-3.3.0-stable.jar:C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-bullet-3.3.0-stable.jar:C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-bullet-native-3.3.0-stable.jar:C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-testdata.jar:D:\Downloads\jar_files\mockito-all-1.10.19.jar:build/classes:assets" />
+    <property name="libs.jaxb.src" value="" />
+    <property name="assets.compress" value="true" />
+    <property name="sun.awt.enableExtraMouseButtons" value="true" />
+    <property name="org.openide.major.version" value="IDE/1" />
+    <property name="libs.jme3-lwjgl3.maven-pom" value="" />
+    <property name="ap.proc.none.internal" value="" />
+    <property name="org.openide.specification.version" value="6.2" />
+    <property name="user.timezone" value="" />
+    <property name="libs.jme3-desktop.src" value="" />
+    <property name="jar.index" value="false" />
+    <property name="libs.junit_5.classpath" value="C:\Program Files\jmonkeyplatform\platform\modules\ext\junit-jupiter-api-5.6.0.jar;C:\Program Files\jmonkeyplatform\platform\modules\ext\junit-jupiter-params-5.6.0.jar;C:\Program Files\jmonkeyplatform\platform\modules\ext\junit-jupiter-engine-5.6.0.jar" />
+    <property name="java.vm.specification.version" value="11" />
+    <property name="assets.jar.resolved" value="D:\User\JMonkey\BasicGame1\build\assets.jar" />
+    <property name="javadoc.noindex" value="false" />
+    <property name="javadoc.private" value="false" />
+    <property name="libs.jme3-android-native.src" value="" />
+    <property name="libs.JAXB-ENDORSED.maven-pom" value="" />
+    <property name="libs.jme3-lwjgl.classpath" value="C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-lwjgl-3.3.0-stable.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\lwjgl-2.9.3.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jinput-2.0.5.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jinput-platform-2.0.5-natives-linux.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jinput-platform-2.0.5-natives-windows.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jinput-platform-2.0.5-natives-osx.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jutils-1.0.0.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\lwjgl-platform-2.9.3-natives-windows.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\lwjgl-platform-2.9.3-natives-linux.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\lwjgl-platform-2.9.3-natives-osx.jar" />
+    <property name="user.home" value="C:\Users\Professional" />
+    <property name="libs.Minie.maven-pom" value="" />
+    <property name="have.sources" value="true" />
+    <property name="annotation.processing.processors.list" value="" />
+    <property name="libs.jme3-lwjgl3.classpath" value="C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\lwjgl-3.2.3.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\lwjgl-3.2.3-natives-windows.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\lwjgl-3.2.3-natives-linux.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\lwjgl-3.2.3-natives-macos.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\lwjgl-opengl-3.2.3.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\lwjgl-opengl-3.2.3-natives-windows.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\lwjgl-opengl-3.2.3-natives-linux.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\lwjgl-opengl-3.2.3-natives-macos.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\lwjgl-opencl-3.2.3.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\lwjgl-openal-3.2.3.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\lwjgl-openal-3.2.3-natives-windows.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\lwjgl-openal-3.2.3-natives-linux.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\lwjgl-openal-3.2.3-natives-macos.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\lwjgl-jemalloc-3.2.3.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\lwjgl-jemalloc-3.2.3-natives-windows.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\lwjgl-jemalloc-3.2.3-natives-linux.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\lwjgl-jemalloc-3.2.3-natives-macos.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\lwjgl-glfw-3.2.3.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\lwjgl-glfw-3.2.3-natives-windows.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\lwjgl-glfw-3.2.3-natives-linux.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\lwjgl-glfw-3.2.3-natives-macos.jar" />
+    <property name="javac.deprecation" value="false" />
+    <property name="jlink.launcher" value="false" />
+    <property name="build.generated.sources.dir" value="build/generated-sources" />
+    <property name="libs.unspecified.javadoc" value="" />
+    <property name="libs.Heart.classpath" value="C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-core-3.3.0-stable.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\Heart-6.0.0.jar" />
+    <property name="libs.jme3-lwjgl3.javadoc" value="" />
+    <property name="netbeans.autoupdate.language" value="ru" />
+    <property name="build.compiler.emacs" value="true" />
+    <property name="build.classes.excludes" value="**/*.java,**/*.form" />
+    <property name="dist.jar" value="dist/MyGame.jar" />
+    <property name="libs.jme3-niftygui.src" value="" />
+    <property name="os.version" value="10.0" />
+    <property name="netbeans.home" value="C:\Program Files\jmonkeyplatform\platform" />
+    <property name="libs.CopyLibs.javadoc" value="" />
+    <property name="debug-transport-by-os" value="dt_shmem" />
+    <property name="java.vm.name" value="OpenJDK 64-Bit Server VM" />
+    <property name="libs.jaxws21.classpath" value="C:\Program Files\jmonkeyplatform\ide\modules\ext\jaxb\jaxb-impl.jar;C:\Program Files\jmonkeyplatform\ide\modules\ext\jaxb\jaxb-xjc.jar;C:\Program Files\jmonkeyplatform\java\modules\ext\jaxws22\FastInfoset.jar;C:\Program Files\jmonkeyplatform\java\modules\ext\jaxws22\gmbal-api-only.jar;C:\Program Files\jmonkeyplatform\java\modules\ext\jaxws22\ha-api.jar;C:\Program Files\jmonkeyplatform\java\modules\ext\jaxws22\javax.mail_1.4.jar;C:\Program Files\jmonkeyplatform\java\modules\ext\jaxws22\jaxws-rt.jar;C:\Program Files\jmonkeyplatform\java\modules\ext\jaxws22\jaxws-tools.jar;C:\Program Files\jmonkeyplatform\java\modules\ext\jaxws22\management-api.jar;C:\Program Files\jmonkeyplatform\java\modules\ext\jaxws22\mimepull.jar;C:\Program Files\jmonkeyplatform\java\modules\ext\jaxws22\policy.jar;C:\Program Files\jmonkeyplatform\java\modules\ext\jaxws22\saaj-impl.jar;C:\Program Files\jmonkeyplatform\java\modules\ext\jaxws22\stax-ex.jar;C:\Program Files\jmonkeyplatform\java\modules\ext\jaxws22\stax2-api.jar;C:\Program Files\jmonkeyplatform\java\modules\ext\jaxws22\streambuffer.jar;C:\Program Files\jmonkeyplatform\java\modules\ext\jaxws22\woodstox-core-asl.jar;C:\Program Files\jmonkeyplatform\java\modules\ext\jaxws22\api\jaxws-api.jar;C:\Program Files\jmonkeyplatform\java\modules\ext\jaxws22\api\jsr181-api.jar;C:\Program Files\jmonkeyplatform\java\modules\ext\jaxws22\api\javax.annotation.jar;C:\Program Files\jmonkeyplatform\java\modules\ext\jaxws22\api\saaj-api.jar;C:\Program Files\jmonkeyplatform\ide\modules\ext\jaxb\activation.jar;C:\Program Files\jmonkeyplatform\ide\modules\ext\jaxb\api\jaxb-api.jar" />
+    <property name="os.arch" value="amd64" />
+    <property name="build.generated.dir" value="build/generated" />
+    <property name="libs.groovy-all.javadoc" value="" />
+    <property name="netbeans.user.dir" value="C:\Program Files\jmonkeyplatform" />
+    <property name="libs.jme3-android.classpath" value="C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-android-3.3.0-stable.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\gson-2.8.1.jar" />
+    <property name="jnlp.descriptor" value="application" />
+    <property name="assets.folder.name" value="assets" />
+    <property name="org.netbeans.io.suspend" value="0" />
+    <property name="libs.jme3-blender.src" value="" />
+    <property name="awt.toolkit" value="sun.awt.windows.WToolkit" />
+    <property name="libs.jme3-core.maven-pom" value="" />
+    <property name="ant.project.name" value="BasicGameTemplate" />
+    <property name="dist.javadoc.dir" value="dist/javadoc" />
+    <property name="libs.jme3-networking.classpath" value="C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-networking-3.3.0-stable.jar" />
+    <property name="default.javac.target" value="11" />
+    <property name="javac.fork" value="false" />
+    <property name="libs.javahelp.classpath" value="C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\javahelp-2.0.05.jar" />
+    <property name="libs.javac-api.classpath" value="" />
+    <property name="libs.jme3-terrain.javadoc" value="" />
+    <property name="user.country.format" value="UA" />
+    <property name="testng.mode" value="testng" />
+    <property name="annotation.processing.enabled.in.editor" value="false" />
+    <property name="java.vm.compressedOopsMode" value="32-bit" />
+    <property name="libs.jme3-effects.classpath" value="C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-effects-3.3.0-stable.jar" />
+    <property name="build.classes.dir.resolved" value="D:\User\JMonkey\BasicGame1\build\classes" />
+    <property name="netbeans.productversion" value="jMonkeyEngine SDK v3.3.0-stable" />
+    <property name="libs.pro-guard.classpath" value="C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\proguard.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\retrace.jar" />
+    <property name="mkdist.disabled" value="false" />
+    <property name="libs.lwjgl-applet.javadoc" value="" />
+    <property name="libs.jme3-ios.classpath" value="C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\gson-2.8.1.jar" />
+    <property name="libs.groovy-all.classpath" value="C:\Program Files\jmonkeyplatform\groovy\modules\ext\groovy.jar;C:\Program Files\jmonkeyplatform\groovy\modules\ext\groovy-ant.jar" />
+    <property name="annotation.processing.processor.options" value="" />
+    <property name="libs.jaxb.maven-pom" value="" />
+    <property name="libs.jme3_xbuf.maven-pom" value="" />
+    <property name="dist.dir" value="dist" />
+    <property name="build.dir" value="build" />
+    <property name="libs.jme3-blender.classpath" value="C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-blender-3.3.0-stable.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\core-0.27.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\dense64-0.27.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\simple-0.27.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\denseC64-0.27.jar" />
+    <property name="libs.jme3-desktop.classpath" value="C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-desktop-3.3.0-stable.jar" />
+    <property name="netbeans.autoupdate.variant" value="" />
+    <property name="libs.jme3-desktop.javadoc" value="" />
+    <property name="javadoc.version" value="false" />
+    <property name="libs.jme3-jbullet.javadoc" value="" />
+    <property name="libs.CopyLibs.classpath" value="C:\Program Files\jmonkeyplatform\java\ant\extra\org-netbeans-modules-java-j2seproject-copylibstask.jar" />
+    <property name="sun.os.patch.level" value="" />
+    <property name="javadoc.html5" value="false" />
+    <property name="javac.test.processorpath" value="C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-jogg-3.3.0-stable.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\j-ogg-all-1.0.0.jar:C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-networking-3.3.0-stable.jar:C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-plugins-3.3.0-stable.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\gson-2.8.1.jar:C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-core-3.3.0-stable.jar:C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-desktop-3.3.0-stable.jar:C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-lwjgl-3.3.0-stable.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\lwjgl-2.9.3.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jinput-2.0.5.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jinput-platform-2.0.5-natives-linux.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jinput-platform-2.0.5-natives-windows.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jinput-platform-2.0.5-natives-osx.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jutils-1.0.0.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\lwjgl-platform-2.9.3-natives-windows.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\lwjgl-platform-2.9.3-natives-linux.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\lwjgl-platform-2.9.3-natives-osx.jar:C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-effects-3.3.0-stable.jar:C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-terrain-3.3.0-stable.jar:C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-bullet-3.3.0-stable.jar:C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-bullet-native-3.3.0-stable.jar:C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-testdata.jar:D:\Downloads\jar_files\mockito-all-1.10.19.jar:build/classes:C:\Program Files\jmonkeyplatform\platform\modules\ext\junit-4.12.jar:C:\Program Files\jmonkeyplatform\platform\modules\ext\hamcrest-core-1.3.jar" />
+    <property name="netbeans.dirs" value="C:\Program Files\jmonkeyplatform\jmonkeyplatform;C:\Program Files\jmonkeyplatform\extide;C:\Program Files\jmonkeyplatform\groovy;C:\Program Files\jmonkeyplatform\harness;C:\Program Files\jmonkeyplatform\ide;C:\Program Files\jmonkeyplatform\java;C:\Program Files\jmonkeyplatform\nb" />
+    <property name="libs.jme3-jogg.src" value="" />
+    <property name="libs.hamcrest.maven-pom" value="" />
+    <property name="javac.processorpath" value="C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-jogg-3.3.0-stable.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\j-ogg-all-1.0.0.jar:C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-networking-3.3.0-stable.jar:C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-plugins-3.3.0-stable.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\gson-2.8.1.jar:C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-core-3.3.0-stable.jar:C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-desktop-3.3.0-stable.jar:C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-lwjgl-3.3.0-stable.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\lwjgl-2.9.3.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jinput-2.0.5.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jinput-platform-2.0.5-natives-linux.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jinput-platform-2.0.5-natives-windows.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jinput-platform-2.0.5-natives-osx.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jutils-1.0.0.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\lwjgl-platform-2.9.3-natives-windows.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\lwjgl-platform-2.9.3-natives-linux.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\lwjgl-platform-2.9.3-natives-osx.jar:C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-effects-3.3.0-stable.jar:C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-terrain-3.3.0-stable.jar:C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-bullet-3.3.0-stable.jar:C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-bullet-native-3.3.0-stable.jar:C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-testdata.jar:D:\Downloads\jar_files\mockito-all-1.10.19.jar" />
+    <property name="libs.jme3-android-native.javadoc" value="" />
+    <property name="libs.jme3-ios.maven-pom" value="" />
+    <property name="libs.JWSAntTasks.maven-pom" value="" />
+    <property name="libs.Minie.src" value="" />
+    <property name="libs.jme3-bullet.classpath" value="C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-bullet-3.3.0-stable.jar" />
+    <property name="libs.jme3-jogg.maven-pom" value="" />
+    <property name="libs.gdx-ai.maven-pom" value="" />
+    <property name="netbeans.exception.alert.min.level" value="99999" />
+    <property name="run.modulepath" value="" />
+    <property name="jnlp.codebase.type" value="local" />
+    <property name="do.archive+manifest.available" value="true" />
+    <property name="libs.jme3-bullet.src" value="" />
+    <property name="user.country" value="RU" />
+    <property name="sun.java.launcher" value="SUN_STANDARD" />
+    <property name="run.classpath.without.build.classes.dir" value="C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-jogg-3.3.0-stable.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\j-ogg-all-1.0.0.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-networking-3.3.0-stable.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-plugins-3.3.0-stable.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\gson-2.8.1.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-core-3.3.0-stable.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-desktop-3.3.0-stable.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-lwjgl-3.3.0-stable.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\lwjgl-2.9.3.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jinput-2.0.5.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jinput-platform-2.0.5-natives-linux.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jinput-platform-2.0.5-natives-windows.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jinput-platform-2.0.5-natives-osx.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jutils-1.0.0.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\lwjgl-platform-2.9.3-natives-windows.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\lwjgl-platform-2.9.3-natives-linux.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\lwjgl-platform-2.9.3-natives-osx.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-effects-3.3.0-stable.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-terrain-3.3.0-stable.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-bullet-3.3.0-stable.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-bullet-native-3.3.0-stable.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-testdata.jar;D:\Downloads\jar_files\mockito-all-1.10.19.jar;;D:\User\JMonkey\BasicGame1\build\assets.jar" />
+    <property name="endorsed.classpath" value="" />
+    <property name="javac.test.sourcepath" value="D:\User\JMonkey\BasicGame1\build\empty" />
+    <property name="libs.jme3-bullet.maven-pom" value="" />
+    <property name="libs.Wes.classpath" value="C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-core-3.3.0-stable.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\Wes-0.6.0.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\Heart-6.0.0.jar" />
+    <property name="libs.jme3-blender.javadoc" value="" />
+    <property name="includes" value="**" />
+    <property name="libs.hamcrest.classpath" value="C:\Program Files\jmonkeyplatform\platform\modules\ext\hamcrest-core-1.3.jar" />
+    <property name="javadoc.splitindex" value="true" />
+    <property name="libs.JWSAntTasks.classpath" value="C:\Program Files\jmonkeyplatform\java\ant\extra\org-netbeans-modules-javawebstart-anttasks.jar" />
+    <property name="junit.available" value="true" />
+    <property name="javac.processormodulepath" value="" />
+    <property name="http.agent" value="jMonkeyEngine SDK v3.3.0-stable (Windows 10/10.0)" />
+    <property name="javadoc.encoding" value="UTF-8" />
+    <property name="libs.jme3-jogg.classpath" value="C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-jogg-3.3.0-stable.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\j-ogg-all-1.0.0.jar" />
+    <property name="netbeans.hash.code" value="unique=00c54e3fb-b9e1-4df0-bb1d-757b085a425f_400d7627-85f3-4ae2-a007-56e768e678e3" />
+    <property name="jlink.strip" value="false" />
+    <property name="java.runtime.name" value="OpenJDK Runtime Environment" />
+    <property name="manifest.available" value="true" />
+    <property name="libs.jaxb.javadoc" value="C:\Program Files\jmonkeyplatform\ide\docs\jaxb-api-doc.jar" />
+    <property name="assets.jar.name" value="assets.jar" />
+    <property name="run.jvmargs.ide" value="" />
+    <property name="ant.core.lib" value="C:\Program Files\jmonkeyplatform\extide\ant\lib\ant.jar" />
+    <property name="javac.profile.cmd.line.arg" value="" />
+    <property name="libs.jme3-android-native.classpath" value="C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-android-native-3.3.0-stable.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\gson-2.8.1.jar" />
+    <property name="application.title" value="MyGame" />
+    <property name="do.archive+main.class.available" value="true" />
+    <property name="libs.jme3-android-native.maven-pom" value="" />
+    <property name="libs.jme3-core.classpath" value="C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-core-3.3.0-stable.jar" />
+    <property name="javac.test.modulepath" value="" />
+    <property name="javac.includesfile.binary" value="D:\User\JMonkey\BasicGame1\null998500484" />
+    <property name="sun.cpu.isalist" value="amd64" />
+    <property name="do.depend" value="false" />
+    <property name="javadoc.preview" value="true" />
+    <property name="libs.jme3-ios.src" value="" />
+    <property name="sun.arch.data.model" value="64" />
+    <property name="annotation.processing.enabled" value="true" />
+    <property name="libs.junit_5.src" value="C:\Program Files\jmonkeyplatform\platform\docs\junit-jupiter-api-5.6.0-sources.jar;C:\Program Files\jmonkeyplatform\platform\docs\junit-jupiter-params-5.6.0-sources.jar;C:\Program Files\jmonkeyplatform\platform\docs\junit-jupiter-engine-5.6.0-sources.jar" />
+    <property name="libs.jme3-niftygui.maven-pom" value="" />
+    <property name="libs.jaxb.classpath" value="C:\Program Files\jmonkeyplatform\ide\modules\ext\jaxb\jaxb-impl.jar;C:\Program Files\jmonkeyplatform\ide\modules\ext\jaxb\jaxb-xjc.jar;C:\Program Files\jmonkeyplatform\ide\modules\ext\jaxb\jaxb1-impl.jar;C:\Program Files\jmonkeyplatform\ide\modules\ext\jaxb\activation.jar;C:\Program Files\jmonkeyplatform\ide\modules\ext\jaxb\api\jaxb-api.jar" />
+    <property name="auxiliary.org-netbeans-spi-editor-hints-projects.perProjectHintSettingsFile" value="nbproject/cfg_hints.xml" />
+    <property name="ant.file.type.BasicGameTemplate" value="file" />
+    <property name="libs.lwjgl-applet.src" value="" />
+    <property name="libs.CopyLibs.src" value="" />
+    <property name="libs.jme3-plugins.javadoc" value="" />
+    <property name="javac.source" value="1.7" />
+    <property name="java.specification.vendor" value="Oracle Corporation" />
+    <property name="java.version.date" value="2020-01-14" />
+    <property name="java.home" value="C:\Program Files\jmonkeyplatform\jdk" />
+    <property name="libs.Heart.src" value="" />
+    <property name="libs.jme3-bullet-native.src" value="" />
+    <property name="libs.jme3-lwjgl3.src" value="" />
+    <property name="work.dir" value="D:\User\JMonkey\BasicGame1" />
+    <property name="javac.test.compilerargs" value="" />
+    <property name="jna.boot.library.name" value="jnidispatch-nb" />
+    <property name="libs.gdx-ai.javadoc" value="C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\gdx-ai-1.8.1-javadoc.jar" />
+    <property name="libs.jme3_xbuf.src" value="" />
+    <property name="netbeans.exception.report.min.level" value="99999" />
+    <property name="libs.JAXB-ENDORSED.src" value="" />
+    <property name="jaxbwiz.endorsed.dirs" value="&quot;C:\Program Files\jmonkeyplatform\platform/../ide12/modules/ext/jaxb/api&quot;" />
+    <property name="manifest.encoding" value="UTF-8" />
+    <property name="user.script" value="" />
+    <property name="libs.jme3-lwjgl.javadoc" value="" />
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers" />
+    <property name="run.test.modulepath" value="" />
+    <property name="ant.file.type.assets-impl" value="file" />
+    <property name="libs.jme3-test-data.javadoc" value="" />
+    <property name="debug.test.modulepath" value="" />
+    <property name="ant.file.type.Catch-up-impl" value="file" />
+    <property name="libs.Wes.maven-pom" value="" />
+    <property name="file.encoding" value="Cp1251" />
+    <property name="libs.jme3-lwjgl.src" value="" />
+    <property name="java.util.logging.config.class" value="org.netbeans.core.startup.TopLogging" />
+    <property name="libs.gdx-ai.classpath" value="C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\gdx-ai-1.8.1.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\gdx-1.9.5.jar" />
+    <property name="libs.jme3_xbuf.classpath" value="C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3_xbuf-0.9.1.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3_xbuf-0.9.1.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3_xbuf_rt-0.9.1.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3_xbuf_loader-0.9.1.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3_xbuf_remote-0.9.1.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3_xbuf_viewer-0.9.1.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\slf4j-api-1.7.7.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\protobuf-java-3.0.0.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\xbuf-0.9.1.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\netty-common-4.0.24.Final.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\netty-buffer-4.0.24.Final.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\netty-transport-4.0.24.Final.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\netty-codec-4.0.24.Final.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jcommander-1.35.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\controlsfx-8.40.10.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\logback-classic-1.1.2.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\logback-core-1.1.2.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jul-to-slf4j-1.7.7.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\protobuf-java-util-3.0.0.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\guava-18.0.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\gson-2.8.1.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\core-0.27.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\dense64-0.27.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\simple-0.27.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\denseC64-0.27.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\lwjgl-2.9.3.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jinput-2.0.5.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jinput-platform-2.0.5-natives-linux.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jinput-platform-2.0.5-natives-windows.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jinput-platform-2.0.5-natives-osx.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jutils-1.0.0.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\lwjgl-platform-2.9.3-natives-windows.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\lwjgl-platform-2.9.3-natives-linux.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\lwjgl-platform-2.9.3-natives-osx.jar" />
+    <property name="https.nonProxyHosts" value="localhost|127.0.0.1|User-PC" />
+    <property name="do.archive" value="true" />
+    <property name="java.awt.printerjob" value="sun.awt.windows.WPrinterJob" />
+    <property name="built-jar.properties" value="D:\User\JMonkey\BasicGame1\build\built-jar.properties" />
+    <property name="nb.native.filechooser" value="false" />
+    <property name="libs.testng.src" value="" />
+    <property name="platform.active" value="default_platform" />
+    <property name="manifest.file" value="MANIFEST.MF" />
+    <property name="libs.jme3-test-data.classpath" value="C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-testdata.jar" />
+    <property name="libs.Minie.javadoc" value="" />
+    <property name="sun.io.unicode.encoding" value="UnicodeLittle" />
+    <property name="libs.jme3-terrain.maven-pom" value="" />
+    <property name="sun.desktop" value="windows" />
+    <property name="default.javac.source" value="11" />
+    <property name="netbeans.dynamic.classpath" value="C:\Program Files\jmonkeyplatform\platform\core\asm-7.2.jar;C:\Program Files\jmonkeyplatform\platform\core\asm-commons-7.2.jar;C:\Program Files\jmonkeyplatform\platform\core\asm-tree-7.2.jar;C:\Program Files\jmonkeyplatform\platform\core\core-base.jar;C:\Program Files\jmonkeyplatform\platform\core\core.jar;C:\Program Files\jmonkeyplatform\platform\core\org-netbeans-libs-asm.jar;C:\Program Files\jmonkeyplatform\platform\core\org-openide-filesystems-compat8.jar;C:\Program Files\jmonkeyplatform\platform\core\org-openide-filesystems.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\core\locale\core_jmonkeyplatform.jar" />
+    <property name="libs.jme3-niftygui.javadoc" value="" />
+    <property name="jme.project.version" value="3.1" />
+    <property name="libs.jme3-jbullet.src" value="" />
+    <property name="libs.Heart.maven-pom" value="" />
+    <property name="libs.jme3-networking.src" value="" />
+    <property name="test.tests.dir" value="tests" />
+    <property name="libs.jme3-terrain.src" value="" />
+    <property name="netbeans.buildnumber" value="12.0-631bd69cd6112b1cc4c892c24e3e605b1ba04241" />
+    <property name="endorsed.classpath.cmd.line.arg" value="" />
+    <property name="libs.Minie.classpath" value="C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-terrain-3.3.0-stable.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\Minie-3.0.0.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\Heart-6.0.0.jar" />
+    <property name="netbeans.projects.dir" value="D:\User\JMonkey" />
+    <property name="libs.CopyLibs.maven-pom" value="" />
+    <property name="os.name" value="Windows 10" />
+    <property name="build.sysclasspath" value="ignore" />
+    <property name="libs.jme3-bullet.javadoc" value="" />
+    <property name="jdkBug6558476" value="false" />
+    <property name="http.nonProxyHosts" value="localhost|127.0.0.1|User-PC" />
+    <property name="javadoc.author" value="false" />
+    <property name="main.class" value="mygame.Main" />
+    <property name="source.encoding" value="UTF-8" />
+    <property name="jar.compress" value="false" />
+    <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment" />
+    <property name="libs.javahelp.src" value="" />
+    <property name="libs.jme3-effects.javadoc" value="" />
+    <property name="run.jvmargs" value="" />
+    <property name="ant.file" value="D:\User\JMonkey\BasicGame1\build.xml" />
+    <property name="path.separator" value=";" />
+    <property name="libs.jme3-lwjgl.maven-pom" value="" />
+    <property name="libs.jme3-android.src" value="" />
+    <property name="libs.JAXB-ENDORSED.classpath" value="C:\Program Files\jmonkeyplatform\ide\modules\ext\jaxb\api\jaxb-api.jar" />
+    <property name="build.test.results.dir" value="build/test/results" />
+    <property name="libs.jme3-bullet-native-android.classpath" value="C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-bullet-native-android-3.3.0-stable.jar" />
+    <property name="libs.jaxws21.javadoc" value="C:\Program Files\jmonkeyplatform\java\docs\jaxws-api-doc.zip" />
+    <property name="ap.processors.internal" value="" />
+    <property name="libs.jme3-bullet-native-android.maven-pom" value="" />
+    <property name="libs.hamcrest.javadoc" value="" />
+    <property name="libs.javac-api.src" value="" />
+    <property name="user.language.format" value="uk" />
+    <property name="do.jar" value="true" />
+    <property name="java.vm.info" value="mixed mode" />
+    <property name="libs.jaxws21.maven-pom" value="" />
+    <property name="run.test.classpath" value="C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-jogg-3.3.0-stable.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\j-ogg-all-1.0.0.jar:C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-networking-3.3.0-stable.jar:C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-plugins-3.3.0-stable.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\gson-2.8.1.jar:C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-core-3.3.0-stable.jar:C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-desktop-3.3.0-stable.jar:C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-lwjgl-3.3.0-stable.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\lwjgl-2.9.3.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jinput-2.0.5.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jinput-platform-2.0.5-natives-linux.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jinput-platform-2.0.5-natives-windows.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jinput-platform-2.0.5-natives-osx.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jutils-1.0.0.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\lwjgl-platform-2.9.3-natives-windows.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\lwjgl-platform-2.9.3-natives-linux.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\lwjgl-platform-2.9.3-natives-osx.jar:C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-effects-3.3.0-stable.jar:C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-terrain-3.3.0-stable.jar:C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-bullet-3.3.0-stable.jar:C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-bullet-native-3.3.0-stable.jar:C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-testdata.jar:D:\Downloads\jar_files\mockito-all-1.10.19.jar:build/classes:C:\Program Files\jmonkeyplatform\platform\modules\ext\junit-4.12.jar:C:\Program Files\jmonkeyplatform\platform\modules\ext\hamcrest-core-1.3.jar:build/test/classes" />
+    <property name="libs.jme3-bullet-native.javadoc" value="" />
+    <property name="libs.jme3-android.maven-pom" value="" />
+    <property name="java.class.version" value="55.0" />
+    <property name="javadoc.encoding.used" value="UTF-8" />
+    <property name="src.dir" value="src" />
+    <property name="debug.classpath" value="C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-jogg-3.3.0-stable.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\j-ogg-all-1.0.0.jar:C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-networking-3.3.0-stable.jar:C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-plugins-3.3.0-stable.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\gson-2.8.1.jar:C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-core-3.3.0-stable.jar:C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-desktop-3.3.0-stable.jar:C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-lwjgl-3.3.0-stable.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\lwjgl-2.9.3.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jinput-2.0.5.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jinput-platform-2.0.5-natives-linux.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jinput-platform-2.0.5-natives-windows.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jinput-platform-2.0.5-natives-osx.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jutils-1.0.0.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\lwjgl-platform-2.9.3-natives-windows.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\lwjgl-platform-2.9.3-natives-linux.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\lwjgl-platform-2.9.3-natives-osx.jar:C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-effects-3.3.0-stable.jar:C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-terrain-3.3.0-stable.jar:C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-bullet-3.3.0-stable.jar:C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-bullet-native-3.3.0-stable.jar:C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-testdata.jar:D:\Downloads\jar_files\mockito-all-1.10.19.jar:build/classes:assets" />
+    <property name="ant.project.default-target" value="default" />
+    <property name="excludes" value="" />
+    <property name="libs.jme3-jogl.classpath" value="C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-jogl-3.3.0-stable.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jocl-main-2.3.2.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jocl-2.3.2.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jocl-2.3.2-natives-android-aarch64.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jocl-2.3.2-natives-android-armv6.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jocl-2.3.2-natives-linux-amd64.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jocl-2.3.2-natives-linux-armv6.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jocl-2.3.2-natives-linux-armv6hf.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jocl-2.3.2-natives-linux-i586.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jocl-2.3.2-natives-macosx-universal.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jocl-2.3.2-natives-solaris-amd64.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jocl-2.3.2-natives-solaris-i586.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jocl-2.3.2-natives-windows-amd64.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jocl-2.3.2-natives-windows-i586.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\joal-main-2.3.2.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\joal-2.3.2.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\joal-2.3.2-natives-android-aarch64.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\joal-2.3.2-natives-android-armv6.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\joal-2.3.2-natives-linux-amd64.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\joal-2.3.2-natives-linux-armv6.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\joal-2.3.2-natives-linux-armv6hf.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\joal-2.3.2-natives-linux-i586.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\joal-2.3.2-natives-macosx-universal.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\joal-2.3.2-natives-solaris-amd64.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\joal-2.3.2-natives-solaris-i586.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\joal-2.3.2-natives-windows-amd64.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\joal-2.3.2-natives-windows-i586.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jogl-all-main-2.3.2.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jogl-all-2.3.2.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jogl-all-2.3.2-natives-android-aarch64.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jogl-all-2.3.2-natives-android-armv6.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jogl-all-2.3.2-natives-linux-amd64.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jogl-all-2.3.2-natives-linux-armv6.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jogl-all-2.3.2-natives-linux-armv6hf.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jogl-all-2.3.2-natives-linux-i586.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jogl-all-2.3.2-natives-macosx-universal.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jogl-all-2.3.2-natives-solaris-amd64.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jogl-all-2.3.2-natives-solaris-i586.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jogl-all-2.3.2-natives-windows-amd64.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jogl-all-2.3.2-natives-windows-i586.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\gluegen-rt-main-2.3.2.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\gluegen-rt-2.3.2.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\gluegen-rt-2.3.2-natives-android-aarch64.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\gluegen-rt-2.3.2-natives-android-armv6.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\gluegen-rt-2.3.2-natives-linux-amd64.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\gluegen-rt-2.3.2-natives-linux-armv6.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\gluegen-rt-2.3.2-natives-linux-armv6hf.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\gluegen-rt-2.3.2-natives-linux-i586.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\gluegen-rt-2.3.2-natives-macosx-universal.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\gluegen-rt-2.3.2-natives-solaris-amd64.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\gluegen-rt-2.3.2-natives-solaris-i586.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\gluegen-rt-2.3.2-natives-windows-amd64.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\gluegen-rt-2.3.2-natives-windows-i586.jar" />
+    <property name="run.test.jvmargs" value="" />
+    <property name="libs.junit_4.javadoc" value="C:\Program Files\jmonkeyplatform\platform\docs\junit-4.12-javadoc.jar" />
+    <property name="sun.jnu.encoding" value="Cp1251" />
+    <property name="jnlp.offline-allowed" value="false" />
+    <property name="libs.jme3-bullet-native.classpath" value="C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-bullet-native-3.3.0-stable.jar" />
+    <property name="main.class.available" value="true" />
+    <property name="libs.gdx-ai.src" value="C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\gdx-ai-1.8.1-sources.jar" />
+    <property name="netbeans.autoupdate.version" value="1.23" />
+    <property name="empty.dir" value="D:\User\JMonkey\BasicGame1\build\empty" />
+    <property name="netbeans.user" value="C:\Users\Professional\AppData\Roaming\jmonkeyplatform\dev" />
+    <property name="javac.includes.binary" value="D:\User\JMonkey\BasicGame1\build\test\classes\NewEmptyJUnitTest.class" />
+    <property name="file.separator" value="\" />
+    <property name="line.separator" value="&#xd;&#xa;" />
+    <property name="javadoc.additionalparam" value="" />
+    <property name="jnlp.signed" value="false" />
+    <property name="libs.jme3-bullet-native-android.javadoc" value="" />
+    <property name="javac.debug" value="true" />
+    <property name="libs.jme3-test-data.maven-pom" value="" />
+    <property name="libs.testng.classpath" value="C:\Program Files\jmonkeyplatform\platform\modules\ext\testng-6.8.1-dist.jar" />
+    <property name="libs.jme3-core.src" value="" />
+    <property name="libs.Wes.src" value="" />
+    <property name="user.name" value="Professional" />
+    <property name="build.classes.dir" value="build/classes" />
+    <property name="nb.junit.single" value="false" />
+    <property name="javadoc.windowtitle" value="" />
+    <property name="nb.internal.action.name" value="run.single" />
+    <property name="ant.file.BasicGameTemplate" value="D:\User\JMonkey\BasicGame1\build.xml" />
+    <property name="libs.pro-guard.src" value="" />
+    <property name="libs.jaxws21.src" value="" />
+    <property name="libs.lwjgl-applet.maven-pom" value="" />
+    <property name="jna.loaded" value="true" />
+    <property name="libs.junit_5.maven-pom" value="" />
+    <property name="libs.Wes.javadoc" value="" />
+    <property name="ant.junit.enabletestlistenerevents" value="true" />
+    <property name="libs.jme3-plugins.classpath" value="C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-plugins-3.3.0-stable.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\gson-2.8.1.jar" />
+    <property name="libs.JWSAntTasks.src" value="" />
+    <property name="ant.home" value="C:\Program Files\jmonkeyplatform\extide\ant" />
+    <property name="debug.test.classpath" value="C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-jogg-3.3.0-stable.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\j-ogg-all-1.0.0.jar:C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-networking-3.3.0-stable.jar:C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-plugins-3.3.0-stable.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\gson-2.8.1.jar:C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-core-3.3.0-stable.jar:C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-desktop-3.3.0-stable.jar:C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-lwjgl-3.3.0-stable.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\lwjgl-2.9.3.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jinput-2.0.5.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jinput-platform-2.0.5-natives-linux.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jinput-platform-2.0.5-natives-windows.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jinput-platform-2.0.5-natives-osx.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jutils-1.0.0.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\lwjgl-platform-2.9.3-natives-windows.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\lwjgl-platform-2.9.3-natives-linux.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\lwjgl-platform-2.9.3-natives-osx.jar:C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-effects-3.3.0-stable.jar:C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-terrain-3.3.0-stable.jar:C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-bullet-3.3.0-stable.jar:C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-bullet-native-3.3.0-stable.jar:C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-testdata.jar:D:\Downloads\jar_files\mockito-all-1.10.19.jar:build/classes:C:\Program Files\jmonkeyplatform\platform\modules\ext\junit-4.12.jar:C:\Program Files\jmonkeyplatform\platform\modules\ext\hamcrest-core-1.3.jar:build/test/classes" />
+    <property name="javac.external.vm" value="false" />
+    <property name="have.tests" value="true" />
+    <property name="testng.debug.mode" value="" />
+    <property name="libs.jme3-niftygui.classpath" value="C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-niftygui-3.3.0-stable.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\nifty-style-black-1.4.3.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\nifty-1.4.3.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jsr305-2.0.2.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\xpp3-1.1.4c.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\nifty-default-controls-1.4.3.jar" />
+    <property name="javac.target" value="1.7" />
+    <property name="ant.version" value="Apache Ant(TM) version 1.10.4 compiled on June 19 2018" />
+    <property name="libs.jme3-bullet-native-android.src" value="" />
+    <property name="libs.jme3-terrain.classpath" value="C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-terrain-3.3.0-stable.jar" />
+    <property name="java.failonerror" value="true" />
+    <property name="javac.modulepath" value="" />
+    <property name="user.properties.file" value="C:\Users\Professional\AppData\Roaming\jmonkeyplatform\dev\build.properties" />
+    <property name="javac.includes" value="NewEmptyJUnitTest.java" />
+    <property name="netbeans.autoupdate.country" value="RU" />
+    <property name="java.class.path" value="C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-jogg-3.3.0-stable.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\j-ogg-all-1.0.0.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-networking-3.3.0-stable.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-plugins-3.3.0-stable.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\gson-2.8.1.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-core-3.3.0-stable.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-desktop-3.3.0-stable.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-lwjgl-3.3.0-stable.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\lwjgl-2.9.3.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jinput-2.0.5.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jinput-platform-2.0.5-natives-linux.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jinput-platform-2.0.5-natives-windows.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jinput-platform-2.0.5-natives-osx.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jutils-1.0.0.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\lwjgl-platform-2.9.3-natives-windows.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\lwjgl-platform-2.9.3-natives-linux.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\lwjgl-platform-2.9.3-natives-osx.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-effects-3.3.0-stable.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-terrain-3.3.0-stable.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-bullet-3.3.0-stable.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-bullet-native-3.3.0-stable.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-testdata.jar;D:\Downloads\jar_files\mockito-all-1.10.19.jar;D:\User\JMonkey\BasicGame1\build\classes;C:\Program Files\jmonkeyplatform\platform\modules\ext\junit-4.12.jar;C:\Program Files\jmonkeyplatform\platform\modules\ext\hamcrest-core-1.3.jar;D:\User\JMonkey\BasicGame1\build\test\classes;C:\Program Files\jmonkeyplatform\extide\ant\lib\ant-launcher.jar;C:\Program Files\jmonkeyplatform\extide\ant\lib\ant.jar;C:\Program Files\jmonkeyplatform\extide\ant\lib\ant-junit.jar;C:\Program Files\jmonkeyplatform\extide\ant\lib\ant-junit4.jar" />
+    <property name="java.vm.vendor" value="AdoptOpenJDK" />
+    <property name="ap.supported.internal" value="true" />
+    <property name="libs.jme3-jbullet.classpath" value="C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\stack-alloc.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jbullet.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\vecmath-1.3.1.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jbullet.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\stack-alloc.jar" />
+    <property name="user.variant" value="" />
+    <property name="libs.unspecified.classpath" value="C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jbullet.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\stack-alloc.jar" />
+    <property name="netbeans.home+have.tests" value="true" />
+    <property name="test.binaryexcludes" value="" />
+    <property name="assets.excludes" value="**/*.j3odata,**/*.mesh,**/*.skeleton,**/*.mesh.xml,**/*.skeleton.xml,**/*.scene,**/*.material,**/*.obj,**/*.mtl,**/*.3ds,**/*.dae,**/*.blend,**/*.blend*[0-9],**/*.gltf,**/*.bin,**/*.glb,**/*.xbuf" />
+    <property name="javac.compilerargs" value="" />
+    <property name="assets.dir.resolved" value="D:\User\JMonkey\BasicGame1\assets" />
+    <property name="sun.cpu.endian" value="little" />
+    <property name="libs.jme3-jbullet.maven-pom" value="" />
+    <property name="libs.junit_4.src" value="C:\Program Files\jmonkeyplatform\platform\docs\junit-4.12-sources.jar" />
+    <property name="user.language" value="ru" />
+    <property name="copylibs.rebase" value="true" />
+    <property name="maven.defaultProjectBuilder.disableGlobalModelCache" value="true" />
+    <property name="libs.jme3-effects.src" value="" />
+    <property name="javadoc.nonavbar" value="false" />
+    <property name="ant.java.version" value="11" />
+    <property name="libs.junit_4.classpath" value="C:\Program Files\jmonkeyplatform\platform\modules\ext\junit-4.12.jar" />
+    <property name="jlink.launcher.name" value="Catch-up" />
+    <property name="test.binarytestincludes" value="" />
+    <property name="sun.awt.keepWorkingSetOnMinimize" value="true" />
+    <property name="libs.junit_4.maven-pom" value="" />
+    <property name="runtime.encoding" value="UTF-8" />
+    <property name="libs.jme3-jogl.src" value="" />
+    <property name="javac.classpath" value="C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-jogg-3.3.0-stable.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\j-ogg-all-1.0.0.jar:C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-networking-3.3.0-stable.jar:C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-plugins-3.3.0-stable.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\gson-2.8.1.jar:C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-core-3.3.0-stable.jar:C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-desktop-3.3.0-stable.jar:C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-lwjgl-3.3.0-stable.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\lwjgl-2.9.3.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jinput-2.0.5.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jinput-platform-2.0.5-natives-linux.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jinput-platform-2.0.5-natives-windows.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jinput-platform-2.0.5-natives-osx.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jutils-1.0.0.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\lwjgl-platform-2.9.3-natives-windows.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\lwjgl-platform-2.9.3-natives-linux.jar;C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\lwjgl-platform-2.9.3-natives-osx.jar:C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-effects-3.3.0-stable.jar:C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-terrain-3.3.0-stable.jar:C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-bullet-3.3.0-stable.jar:C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-bullet-native-3.3.0-stable.jar:C:\Program Files\jmonkeyplatform\jmonkeyplatform\libs\jme3-testdata.jar:D:\Downloads\jar_files\mockito-all-1.10.19.jar" />
+    <property name="nb.junit.batch" value="true" />
+    <property name="build.test.classes.dir" value="build/test/classes" />
+    <property name="org.lwjgl.librarypath" value="C:\Users\Professional\AppData\Roaming\jmonkeyplatform\dev" />
+    <property name="ant.project.invoked-targets" value="test-single" />
+    <property name="libs.jme3-networking.javadoc" value="" />
+    <property name="ap.cmd.line.internal" value="" />
+    <property name="libs.unspecified.maven-pom" value="" />
+    <property name="java.vendor.url.bug" value="https://github.com/AdoptOpenJDK/openjdk-support/issues" />
+    <property name="user.dir" value="D:\User\JMonkey\BasicGame1" />
+    <property name="platform.java" value="C:\Program Files\jmonkeyplatform\jdk/bin/java" />
+    <property name="application.args" value="" />
+    <property name="org.xml.sax.driver" value="com.sun.org.apache.xerces.internal.jaxp.SAXParserImpl$JAXPSAXParser" />
+    <property name="java.vm.version" value="11.0.6+10" />
+    <property name="libs.jme3-bullet-native.maven-pom" value="" />
+    <property name="libs.jme3-jogl.javadoc" value="" />
+    <property name="test.class" value="NewEmptyJUnitTest" />
+    <property name="sun.awt.datatransfer.timeout" value="1000" />
+    <property name="junit.forkmode" value="perTest" />
+    <property name="annotation.processing.run.all.processors" value="true" />
+  </properties>
+  <testcase classname="NewEmptyJUnitTest" name="flyCamEnabledTest" time="0.002" />
+  <testcase classname="NewEmptyJUnitTest" name="FireTest" time="0.0" />
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
