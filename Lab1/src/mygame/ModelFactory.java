@@ -16,13 +16,16 @@ public class ModelFactory {
   
     /**
      * Constructor of ModelFactory class, takes assetManager as input.
+     * @param assetManager
      */
     public ModelFactory(AssetManager assetManager) {
         this.assetManager = assetManager;
     }
     
     /**
-     * The main method of this class. Loads models.
+     * The main method of this class.Loads models.
+     * @param name - the path to the file
+     * @return created model
      */
     public Spatial create(String name) {
         Spatial model = (Node) assetManager.loadModel("Models/" + name + ".j3o");

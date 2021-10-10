@@ -40,22 +40,22 @@ public class VisualAppState extends AbstractAppState {
     /**
      * The width of the game screen is stored.
      */
-    public int ScreenWidth;
+    public int screenWidth;
     
     /**
      * The height of the game screen is stored.
      */
-    public int ScreenHeight;
+    public int screenHeight;
    
     /**
      * The variable implements fire at the end of the game.
      */
-    ParticleEmitter Fire;
+    ParticleEmitter fire;
     
     /**
      * Flag to control the end of the game.
      */
-    boolean EndGame = false;
+    boolean endGame = false;
     
     @Override
     /**
@@ -65,8 +65,8 @@ public class VisualAppState extends AbstractAppState {
         super.initialize(stateManager, app);
         this.app = (SimpleApplication) app;
         
-        ScreenWidth = app.getCamera().getWidth();
-        ScreenHeight = app.getCamera().getHeight();
+        screenWidth = app.getCamera().getWidth();
+        screenHeight = app.getCamera().getHeight();
         
         DirectionalLight light = new DirectionalLight();
         light.setDirection(new Vector3f(0, 1, 0));
@@ -90,38 +90,41 @@ public class VisualAppState extends AbstractAppState {
         this.app.getRootNode().attachChild(sky);
         
         
-        ParticleEmitter Fire = new ParticleEmitter("Emitter", Type.Triangle, 30);
-        Material mat_red = new Material(app.getAssetManager(), "Common/MatDefs/Misc/Particle.j3md");
-        mat_red.setTexture("Texture", app.getAssetManager().loadTexture("Effects/Explosion/flame.png"));
-        Fire.setMaterial(mat_red);
-        Fire = InitFire(Fire);
+        ParticleEmitter fire2 = new ParticleEmitter("Emitter", Type.Triangle, 30);
+        Material matRed = new Material(app.getAssetManager(), "Common/MatDefs/Misc/Particle.j3md");
+        matRed.setTexture("Texture", app.getAssetManager().loadTexture("Effects/Explosion/flame.png"));
+        fire2.setMaterial(matRed);
+        fire = initFire(fire2);
     }
     
-    public static ParticleEmitter InitFire(ParticleEmitter Fire1) {
-        Fire1.setImagesX(2); 
-        Fire1.setImagesY(2);
-        Fire1.setEndColor(  new ColorRGBA(1f, 0f, 0f, 1f)); 
-        Fire1.setStartColor(new ColorRGBA(1f, 1f, 0f, 0.5f));
-        Fire1.getParticleInfluencer().setInitialVelocity(new Vector3f(0,2,0));
-        Fire1.setStartSize(0.5f);
-        Fire1.setEndSize(0.1f);
-        Fire1.setGravity(0,0,0);
-        Fire1.setLowLife(0.5f);
-        Fire1.setHighLife(3f);
-        Fire1.getParticleInfluencer().setVelocityVariation(0.3f);
+    /**
+     * Static method for setting fire.
+     */
+    public static ParticleEmitter initFire(ParticleEmitter fire1) {
+        fire1.setImagesX(2); 
+        fire1.setImagesY(2);
+        fire1.setEndColor(  new ColorRGBA(1f, 0f, 0f, 1f)); 
+        fire1.setStartColor(new ColorRGBA(1f, 1f, 0f, 0.5f));
+        fire1.getParticleInfluencer().setInitialVelocity(new Vector3f(0,2,0));
+        fire1.setStartSize(0.5f);
+        fire1.setEndSize(0.1f);
+        fire1.setGravity(0,0,0);
+        fire1.setLowLife(0.5f);
+        fire1.setHighLife(3f);
+        fire1.getParticleInfluencer().setVelocityVariation(0.3f);
         
-        return Fire1;
+        return fire1;
     }
     /**
      * The method calculates the required angle of rotation of the ship towards the cursor and performs this rotation.
      */
-    public void RotateBehindCursor() {
+    public void rotateBehindCursor() {
         Vector2f mouse = new Vector2f(app.getInputManager().getCursorPosition());
         Quaternion Rotation =  myShip.getLocalRotation();
                 
-        float dX = mouse.x-myShip.getLocalTranslation().getX()-ScreenWidth/2-
+        float dX = mouse.x-myShip.getLocalTranslation().getX()-screenWidth/2-
                    myShip.getLocalTranslation().x*(1440/11);
-        float dY = mouse.y-myShip.getLocalTranslation().getY()-ScreenHeight/2-
+        float dY = mouse.y-myShip.getLocalTranslation().getY()-screenHeight/2-
                    myShip.getLocalTranslation().y*(900/8);
                                 
         Quaternion position = new Quaternion();
@@ -134,13 +137,13 @@ public class VisualAppState extends AbstractAppState {
      * This method implements the movement of the ship and the rocket, The method also rotates the rocket towards the ship.
      */
     public void update(float tpf) {
-        if (EndGame == false) {
+        if (endGame == false) {
             Vector2f mouse = new Vector2f(app.getInputManager().getCursorPosition());
             float x_Ship = myShip.getLocalTranslation().x;
             float y_Ship = myShip.getLocalTranslation().y;
           
-            float dX = mouse.x-ScreenWidth/2 - x_Ship*(1440/11);
-            float dY = mouse.y-ScreenHeight/2 - y_Ship*(900/8);
+            float dX = mouse.x-screenWidth/2 - x_Ship*(1440/11);
+            float dY = mouse.y-screenHeight/2 - y_Ship*(900/8);
       
             float dX_Ship_Torpedo = x_Ship - myTorpedo.getLocalTranslation().x;
             float dY_Ship_Torpedo = y_Ship - myTorpedo.getLocalTranslation().y;
@@ -158,10 +161,10 @@ public class VisualAppState extends AbstractAppState {
             myTorpedo.setLocalTranslation( localTranslationTorpedo.x + (float)0.0005*FastMath.sign(dX_Ship_Torpedo), localTranslationTorpedo.y + (float)0.0005*FastMath.sign(dY_Ship_Torpedo), 0);
              
             //End Game
-            if (FastMath.abs(dX_Ship_Torpedo) < 0.03 && FastMath.abs(dY_Ship_Torpedo) < 0.03) {
-                Fire.setLocalTranslation(myShip.getLocalTranslation());
-                this.app.getRootNode().attachChild(Fire);
-                EndGame = true;
+            if (FastMath.abs(dX_Ship_Torpedo) < 0.3 && FastMath.abs(dY_Ship_Torpedo) < 0.3) {
+                fire.setLocalTranslation(myShip.getLocalTranslation());
+                this.app.getRootNode().attachChild(fire);
+                endGame = true;
             }
         }
     }

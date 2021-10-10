@@ -57,7 +57,7 @@ public class Main extends SimpleApplication {
         @Override
         public void onAnalog(String name, float value, float tpf) {
             if (name.equals("Rotate")) {
-               visualAppState.RotateBehindCursor();
+               visualAppState.rotateBehindCursor();
             }
         }
     };

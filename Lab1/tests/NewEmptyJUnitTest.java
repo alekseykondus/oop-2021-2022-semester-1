@@ -37,7 +37,7 @@ public class NewEmptyJUnitTest {
         light = Mockito.mock(DirectionalLight.class);
         Mockito.when(light.getDirection()).thenReturn(new Vector3f(0, 1, 0));
 
-        Fire = VisualAppState.InitFire(new ParticleEmitter("Emitter", ParticleMesh.Type.Triangle, 30) );
+        Fire = VisualAppState.initFire(new ParticleEmitter("Emitter", ParticleMesh.Type.Triangle, 30) );
     }
     
     @Test
