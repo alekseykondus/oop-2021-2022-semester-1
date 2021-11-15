@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Medicines xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="Medicine.xsd">
+    <Medicine id="1" Name="Preparate1">
+        <id>1</id>
+        <Name>Preparate1</Name>
+        <Pharm>Pharm1</Pharm>
+        <Group>Sedative</Group>
+        <Analogs>Analogs1</Analogs>
+        <Analogs>Analogs2</Analogs>
+        <Versions>Versions1</Versions>
+        <Certificate>
+            <Number>1234521</Number>
+            <ExpireDate>20.11.22</ExpireDate>
+            <RegisteringOrganization>RegisteringOrganization1</RegisteringOrganization>
+        </Certificate>
+        <Package>
+            <TypeOfPackaging>Glass</TypeOfPackaging>
+            <AmountInPackage>158</AmountInPackage>
+            <Price>12.25</Price>
+        </Package>
+        <Dosage>
+            <DrugDosage>DrugDosage1</DrugDosage>
+            <FrequencyOfAdmission>FrequencyOfAdmission1</FrequencyOfAdmission>
+        </Dosage>
+    </Medicine>
+
+    <Medicine id="2" Name="Preparate_2">
+        <id>2</id>
+        <Name>Preparate_2</Name>
+        <Pharm>Pharm_1</Pharm>
+        <Group>Sedative</Group>
+        <Analogs>Analogs_2_1</Analogs>
+        <Analogs>Analogs_2_2</Analogs>
+        <Versions>Versions_2</Versions>
+        <Certificate>
+            <Number>42524</Number>
+            <ExpireDate>12.11.23</ExpireDate>
+            <RegisteringOrganization>RegisteringOrganization_2</RegisteringOrganization>
+        </Certificate>
+        <Package>
+            <TypeOfPackaging>Glass</TypeOfPackaging>
+            <AmountInPackage>158</AmountInPackage>
+            <Price>12.25</Price>
+        </Package>
+        <Dosage>
+            <DrugDosage>DrugDosage1</DrugDosage>
+            <FrequencyOfAdmission>FrequencyOfAdmission1</FrequencyOfAdmission>
+        </Dosage>
+    </Medicine>
+</Medicines>

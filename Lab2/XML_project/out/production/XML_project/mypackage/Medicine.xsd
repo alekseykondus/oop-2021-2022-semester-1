@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+           targetNamespace="http://www.example.org/Medicine"
+           xmlns:tns="http://www.example.org/Medicine"
+           elementFormDefault="qualified">
+    <xs:element name="Medicines">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="medicine" type="tns:Medicine" minOccurs="1" maxOccurs="100"/>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+    <xs:complexType name="Medicine">
+        <xs:sequence>
+            <xs:element name="id">
+                <xs:simpleType>
+                    <xs:restriction base="xs:ID">
+                        <xs:pattern value="[0-9][0-9][0-9]"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="Name" type="xs:string"/>
+            <xs:element name="Pharm" type="xs:string"/>
+            <xs:element name="Group">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="Antibiotics"/>
+                        <xs:enumeration value="Sedative"/>
+                        <xs:enumeration value="Vitamins"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="Analogs" type="xs:string" minOccurs="1" maxOccurs="100"/>
+            <xs:element name="Versions">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="Pills"/>
+                        <xs:enumeration value="Capsules"/>
+                        <xs:enumeration value="Powder"/>
+                        <xs:enumeration value="Drops"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="Certificate" type = "tns:certificate"/>
+            <xs:element name="Package" type = "tns:package"/>
+            <xs:element name="Dosage" type = "tns:dosage"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name="certificate">
+        <xs:sequence>
+            <xs:element name="Number" type="xs:int"/>
+            <xs:element name="ExpireDate" type="xs:string"/>
+            <xs:element name="RegisteringOrganization " type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name = "package">
+        <xs:sequence>
+            <xs:element name="TypeOfPackaging">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:enumeration value="Paper"/>
+                        <xs:enumeration value="Polyethylene"/>
+                        <xs:enumeration value="Glass"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
+            <xs:element name="AmountInPackage" type="xs:int"/>
+            <xs:element name="Price" type="xs:double"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:complexType name = "dosage">
+        <xs:sequence>
+            <xs:element name="DrugDosage" type="xs:string"/>
+            <xs:element name="FrequencyOfAdmission " type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>
