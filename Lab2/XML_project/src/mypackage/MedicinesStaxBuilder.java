@@ -147,7 +147,6 @@ public class MedicinesStaxBuilder {
         throw new XMLStreamException("Unknown element in tag <address>");
     }
 
-
     private Dosage getXMLDosage(XMLStreamReader reader)
             throws XMLStreamException {
 

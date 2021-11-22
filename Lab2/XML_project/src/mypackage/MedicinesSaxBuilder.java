@@ -22,7 +22,7 @@ public class MedicinesSaxBuilder {
         } catch (ParserConfigurationException | SAXException e) {
             e.printStackTrace(); // log
         }
-//        reader.setErrorHandler(new StudentErrorHandler());
+//        reader.setErrorHandler(new MedicineErrorHandler());
         reader.setContentHandler(handler);
     }
     public Set<Medicine> getMedicines() {
@@ -34,6 +34,6 @@ public class MedicinesSaxBuilder {
         } catch (IOException | SAXException e) {
             e.printStackTrace(); // log
         }
-        medicines = handler.getStudents();
+        medicines = handler.getMedinides();
     }
 }

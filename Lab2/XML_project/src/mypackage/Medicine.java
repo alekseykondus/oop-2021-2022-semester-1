@@ -2,6 +2,7 @@
 package mypackage;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -10,7 +11,6 @@ import javax.xml.bind.annotation.XmlID;
 import javax.xml.bind.annotation.XmlType;
 import javax.xml.bind.annotation.adapters.CollapsedStringAdapter;
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
-
 
 /**
  * <p>Java class for Medicine complex type.
@@ -316,6 +316,23 @@ public class Medicine {
      */
     public void setDosage(Dosage value) {
         this.dosage = value;
+    }
+    /**
+     * Comparator class to compare Medicines
+     *
+     * @author  Oleksii Kondus
+     */
+    public static class IdComparator implements Comparator<Medicine> {
+        /** compares Medicines by id
+         *
+         * @param medicine1 lhs Medicine
+         * @param medicine1 rhs Medicine
+         * @return int result of Medicines id comparison
+         */
+        @Override
+        public int compare(Medicine medicine1, Medicine medicine2) {
+            return medicine1.getId().compareTo(medicine2.getId());
+        }
     }
 
 }

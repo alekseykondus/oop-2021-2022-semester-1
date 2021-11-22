@@ -49,7 +49,6 @@ public class MedicinesDomBuilder {
     private Medicine buildMedicine(Element medicineElement) {
         Medicine medicine = new Medicine();
         // add null check
-        //medicine.setId(studentElement.getAttribute("id"));
         medicine.setId(getElementTextContent(medicineElement, "id"));
         medicine.setName(getElementTextContent(medicineElement, "Name"));
         medicine.setPharm(getElementTextContent(medicineElement, "Pharm"));

@@ -3,17 +3,15 @@ package mypackage;
 import org.xml.sax.SAXException;
 import org.xml.sax.XMLReader;
 
-import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
 import java.io.IOException;
 
-
 public class Main {
     public static void main(String[] args) {
 
-//        printXMLFile("resourses/medicines.xml");
+        printXMLFile("resourses/medicines.xml");
         MedicinesDomBuilder domBuilder = new MedicinesDomBuilder();
         domBuilder.buildSetMedicines("resourses/medicines.xml");
         System.out.println(domBuilder.getMedicines());
@@ -34,7 +32,7 @@ public class Main {
             SAXParser parser = factory.newSAXParser();
             XMLReader reader = parser.getXMLReader();
             reader.setContentHandler(new ConsoleMedicineHandler());
-            //reader.setErrorHandler(new StudentErrorHandler());
+            //reader.setErrorHandler(new MedicineErrorHandler());
             reader.parse(name);
         } catch (SAXException | IOException | ParserConfigurationException e) {
             e.printStackTrace();

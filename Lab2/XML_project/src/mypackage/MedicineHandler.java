@@ -16,7 +16,7 @@ public class MedicineHandler extends DefaultHandler{
         medicines = new HashSet<Medicine>();
         withText = EnumSet.range(MedicineXmlTag.ID, MedicineXmlTag.FREQUENCYOFADMISSION);
     }
-    public Set<Medicine> getStudents() {
+    public Set<Medicine> getMedinides() {
         return medicines;
     }
     public void startElement(String uri, String localName, String qName, Attributes attrs) {
