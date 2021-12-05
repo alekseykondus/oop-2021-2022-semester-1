@@ -8,6 +8,9 @@ import android.view.View;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * The class that implements the logic of the game
+ */
 public class GameManager extends GestureDetector.SimpleOnGestureListener {
 
     private List<Drawable> drawables = new ArrayList<>();
@@ -18,10 +21,20 @@ public class GameManager extends GestureDetector.SimpleOnGestureListener {
     private Rect rect = new Rect();
     private int screenSize;
 
+    /**
+     * Instantiates a new Game manager.
+     *
+     * @param mazeSize the maze size
+     */
     public GameManager(int mazeSize) {
         createManager(mazeSize);
     }
 
+    /**
+     * Create manager.
+     *
+     * @param mazeSize the maze size
+     */
     void createManager(int mazeSize) {
         drawables.clear();
         maze = new Maze(mazeSize);
@@ -32,6 +45,9 @@ public class GameManager extends GestureDetector.SimpleOnGestureListener {
         drawables.add(exitPoint);
     }
 
+    /**
+     * A method that tracks the user's swipe and moves the player
+     */
     @Override
     public boolean onFling(MotionEvent e1, MotionEvent e2, float velocityX, float velocityY) {
         int diffX = Math.round(e2.getX() - e1.getX()),
@@ -62,25 +78,41 @@ public class GameManager extends GestureDetector.SimpleOnGestureListener {
                 }
             }
         }
-        player.goTo(stepX, stepY);
+        player.moveTo(stepX, stepY);
         if (exitPoint.getPoint().equals(player.getPoint())) {
-            createManager(maze.getSize() + 5);
+            createManager(maze.getSize() + 6);
         }
         view.invalidate();
 
         return super.onFling(e1, e2, velocityX, velocityY);
     }
 
+    /**
+     * A method that implements the "Template Method" design pattern. We do not know what kind of elements we are drawing. Since the elements are inheritors of Drawable
+     *
+     * @param canvas the canvas
+     */
     public void draw(Canvas canvas) {
         for (Drawable drawableItem : drawables) {
             drawableItem.draw(canvas, rect);
         }
     }
 
+    /**
+     * Sets view.
+     *
+     * @param view the view
+     */
     public void setView(View view) {
         this.view = view;
     }
 
+    /**
+     * Sets screen size.
+     *
+     * @param width  the width
+     * @param height the height
+     */
     public void setScreenSize(int width, int height) {
         screenSize = Math.min(width, height);
         rect.set( (width - screenSize) / 2,

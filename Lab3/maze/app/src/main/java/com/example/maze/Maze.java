@@ -5,12 +5,14 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.graphics.Point;
 import android.graphics.Rect;
-
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Random;
 import java.util.Stack;
 
+/**
+ * Maze class is implemented playing field
+ */
 public class Maze implements Drawable {
     private Paint wallPaint;
     private final boolean [][] array;
@@ -19,6 +21,11 @@ public class Maze implements Drawable {
     private Point start;
     private final Point end = new Point(1, 1);
 
+    /**
+     * Instantiates a new Maze
+     *
+     * @param size the size
+     */
     public Maze(int size) {
         this.wallPaint = getPaint();
         this.size = size;
@@ -26,12 +33,18 @@ public class Maze implements Drawable {
         generateMaze();
     }
 
+    /**
+     * Static method for creating Paint
+     */
     private static Paint getPaint() {
         Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
         paint.setColor(Color.LTGRAY);
         return paint;
     }
 
+    /**
+     * Method for filling the array (creating the playing field). Algorithm on the graph is used
+     */
     private void generateMaze() {
         for (int i = 0; i < size; ++i) {
             for (int j = 0; j < size; ++j) {
@@ -86,10 +99,20 @@ public class Maze implements Drawable {
         }
     }
 
+    /**
+     * Check if the user can go to this cell or if there is a wall (and it is forbidden)
+     *
+     * @param x the x coordinate where the user wants to step
+     * @param y the y coordinate where the user wants to step
+     * @return the boolean
+     */
     public boolean canPlayerGoTo(int x, int y) {
         return array[y][x];
     }
 
+    /**
+     * Check if we have visited this cell before
+     */
     private boolean isUsedCell(int x, int y) {
         if (x < 0 || y < 0 || x >= size - 1 || y >= size - 1) {
             return true;
@@ -98,9 +121,11 @@ public class Maze implements Drawable {
                 || array[y][x - 1] // top
                 || array[y + 1][x] // right
                 || array[y][x + 1]; // bottom
-
     }
 
+    /**
+     * Overriding the draw method
+     */
     @Override
     public void draw(Canvas canvas, Rect rect) {
         float cellSize = (float) (rect.right - rect.left) / size;
@@ -115,12 +140,29 @@ public class Maze implements Drawable {
         }
     }
 
+    /**
+     * Gets start point.
+     *
+     * @return the start point
+     */
     public Point getStart() {
         return start;
     }
+
+    /**
+     * Gets end point.
+     *
+     * @return the end point
+     */
     public Point getEnd() {
         return end;
     }
+
+    /**
+     * Gets playing field size
+     *
+     * @return playing field size
+     */
     public int getSize() {
         return size;
     }

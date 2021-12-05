@@ -6,38 +6,77 @@ import android.graphics.Paint;
 import android.graphics.Point;
 import android.graphics.Rect;
 
+/**
+ * A class that implements the logic of the player
+ */
 public class Player implements Drawable{
 
     private Point point;
     private Paint paint;
     private int size;
 
+    /**
+     * Instantiates a new Player.
+     *
+     * @param start the starting point
+     * @param size  the playing field size
+     */
     public Player(Point start, int size) {
         this.paint = getPaint();
         this.point = start;
         this.size = size;
     }
 
+    /**
+     * Static method for creating Paint
+     */
     private static Paint getPaint() {
         Paint paint = new Paint(Paint.ANTI_ALIAS_FLAG);
         paint.setColor(Color.BLACK);
         return paint;
     }
 
-    public void goTo(int x, int y) {
+    /**
+     * Move the player to a given point
+     *
+     * @param x the x coordinate where the user wants to step
+     * @param y the y coordinate where the user wants to step
+     */
+    public void moveTo(int x, int y) {
         point.x = x;
         point.y = y;
     }
 
+    /**
+     * Gets point.
+     *
+     * @return the point the user is currently at
+     */
     public Point getPoint() {
         return point;
     }
+
+    /**
+     * Gets x the user is currently at
+     *
+     * @return the x the user is currently at
+     */
     public int getX() {
         return point.x;
     }
+
+    /**
+     * Gets y the user is currently at
+     *
+     * @return the y the user is currently at
+     */
     public int getY() {
         return point.y;
     }
+
+    /**
+     * Overriding the draw method
+     */
     @Override
     public void draw(Canvas canvas, Rect rect) {
         float cellSize = (float) (rect.right - rect.left) / size;
