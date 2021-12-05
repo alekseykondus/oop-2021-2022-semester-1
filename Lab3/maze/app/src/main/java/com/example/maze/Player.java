@@ -11,9 +11,9 @@ import android.graphics.Rect;
  */
 public class Player implements Drawable{
 
-    private Point point;
-    private Paint paint;
-    private int size;
+    protected Point point;
+    protected Paint paint;
+    protected int size;
 
     /**
      * Instantiates a new Player.
@@ -25,6 +25,9 @@ public class Player implements Drawable{
         this.paint = getPaint();
         this.point = start;
         this.size = size;
+    }
+
+    public Player() {
     }
 
     /**
