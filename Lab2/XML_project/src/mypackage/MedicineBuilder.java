@@ -11,42 +11,42 @@ public class MedicineBuilder {
 
     public Medicine buildBySAX(Medicine current, String data, MedicineXmlTag currentXmlTag) {
         if (currentXmlTag != null) {
-            if (currentXmlTag.getValue() == "id")
+            if (currentXmlTag.getValue().equals("id"))
                 current.setId(data);
-            else if (currentXmlTag.getValue() == "Name")
+            else if (currentXmlTag.getValue().equals("Name"))
                 current.setName(data);
-            else if (currentXmlTag.getValue() == "Pharm")
+            else if (currentXmlTag.getValue().equals("Pharm"))
                 current.setPharm(data);
-            else if (currentXmlTag.getValue() == "Group")
+            else if (currentXmlTag.getValue().equals("Group"))
                 current.setGroup(data);
-            else if (currentXmlTag.getValue() == "Analogs")
+            else if (currentXmlTag.getValue().equals("Analogs"))
                 current.getAnalogs().add(data);
-            else if (currentXmlTag.getValue() == "Versions")
+            else if (currentXmlTag.getValue().equals("Versions"))
                 current.setVersions(data);
-            else if (currentXmlTag.getValue() == "Certificate") {
+            else if (currentXmlTag.getValue().equals("Certificate")) {
                 if (current.getCertificate() == null)
                     current.setCertificate(new Certificate());
-            } else if (currentXmlTag.getValue() == "Number")
+            } else if (currentXmlTag.getValue().equals("Number"))
                 current.getCertificate().setNumber(Integer.parseInt(data));
-            else if (currentXmlTag.getValue() == "ExpireDate")
+            else if (currentXmlTag.getValue().equals("ExpireDate"))
                 current.getCertificate().setExpireDate(data);
-            else if (currentXmlTag.getValue() == "RegisteringOrganization")
+            else if (currentXmlTag.getValue().equals("RegisteringOrganization"))
                 current.getCertificate().setRegisteringOrganization(data);
-            else if (currentXmlTag.getValue() == "Package") {
+            else if (currentXmlTag.getValue().equals("Package")) {
                 if (current.getPackage() == null)
                     current.setPackage(new Package());
-            } else if (currentXmlTag.getValue() == "TypeOfPackaging")
+            } else if (currentXmlTag.getValue().equals("TypeOfPackaging"))
                 current.getPackage().setTypeOfPackaging(data);
-            else if (currentXmlTag.getValue() == "AmountInPackage")
+            else if (currentXmlTag.getValue().equals("AmountInPackage"))
                 current.getPackage().setAmountInPackage(Integer.parseInt(data));
-            else if (currentXmlTag.getValue() == "Price")
+            else if (currentXmlTag.getValue().equals("Price"))
                 current.getPackage().setPrice(Double.parseDouble(data));
-            else if (currentXmlTag.getValue() == "Dosage") {
+            else if (currentXmlTag.getValue().equals("Dosage")) {
                 if (current.getDosage() == null)
                     current.setDosage(new Dosage());
-            } else if (currentXmlTag.getValue() == "DrugDosage")
+            } else if (currentXmlTag.getValue().equals("DrugDosage"))
                 current.getDosage().setDrugDosage(data);
-            else if (currentXmlTag.getValue() == "FrequencyOfAdmission")
+            else if (currentXmlTag.getValue().equals("FrequencyOfAdmission"))
                 current.getDosage().setFrequencyOfAdmission(data);
             else {
                 throw new EnumConstantNotPresentException(currentXmlTag.getDeclaringClass(), currentXmlTag.name());
@@ -104,23 +104,23 @@ public class MedicineBuilder {
 
     public Medicine buildBySTAX(Medicine medicine, MedicineXmlTag currentXmlTag, XMLStreamReader reader) {
         try {
-            if (currentXmlTag.getValue() == "id")
+            if (currentXmlTag.getValue().equals("id"))
                 medicine.setId(getXMLText(reader));
-            else if (currentXmlTag.getValue() == "Name")
+            else if (currentXmlTag.getValue().equals("Name"))
                 medicine.setName(getXMLText(reader));
-            else if (currentXmlTag.getValue() == "Pharm")
+            else if (currentXmlTag.getValue().equals("Pharm"))
                 medicine.setPharm(getXMLText(reader));
-            else if (currentXmlTag.getValue() == "Group")
+            else if (currentXmlTag.getValue().equals("Group"))
                 medicine.setGroup(getXMLText(reader));
-            else if (currentXmlTag.getValue() == "Analogs")
+            else if (currentXmlTag.getValue().equals("Analogs"))
                 medicine.getAnalogs().add(getXMLText(reader));
-            else if (currentXmlTag.getValue() == "Versions")
+            else if (currentXmlTag.getValue().equals("Versions"))
                 medicine.setVersions(getXMLText(reader));
-            else if (currentXmlTag.getValue() == "Certificate")
+            else if (currentXmlTag.getValue().equals("Certificate"))
                 medicine.setCertificate(getXMLCertificate(reader));
-            else if (currentXmlTag.getValue() == "Package")
+            else if (currentXmlTag.getValue().equals("Package"))
                 medicine.setPackage(getXMLPackage(reader));
-            else if (currentXmlTag.getValue() == "Dosage")
+            else if (currentXmlTag.getValue().equals("Dosage"))
                 medicine.setDosage(getXMLDosage(reader));
             else {
                 throw new EnumConstantNotPresentException(currentXmlTag.getDeclaringClass(), currentXmlTag.name());
@@ -142,16 +142,16 @@ public class MedicineBuilder {
                 case XMLStreamConstants.START_ELEMENT:
                     name = reader.getLocalName();
                     MedicineXmlTag currentXmlTag = MedicineXmlTag.valueOf(name.toUpperCase());
-                    if (currentXmlTag.getValue() == "Number")
+                    if (currentXmlTag.getValue().equals("Number"))
                         certificate.setNumber(Integer.parseInt(getXMLText(reader)));
-                    else if (currentXmlTag.getValue() == "ExpireDate")
+                    else if (currentXmlTag.getValue().equals("ExpireDate"))
                         certificate.setExpireDate(getXMLText(reader));
-                    else if (currentXmlTag.getValue() == "RegisteringOrganization")
+                    else if (currentXmlTag.getValue().equals("RegisteringOrganization"))
                         certificate.setRegisteringOrganization(getXMLText(reader));
                     break;
                 case XMLStreamConstants.END_ELEMENT:
                     name = reader.getLocalName();
-                    if (MedicineXmlTag.valueOf(name.toUpperCase()) == MedicineXmlTag.CERTIFICATE) {
+                    if (MedicineXmlTag.valueOf(name.toUpperCase()).equals(MedicineXmlTag.CERTIFICATE)) {
                         return certificate;
                     }
             }
@@ -170,16 +170,16 @@ public class MedicineBuilder {
                 case XMLStreamConstants.START_ELEMENT:
                     name = reader.getLocalName();
                     MedicineXmlTag currentXmlTag = MedicineXmlTag.valueOf(name.toUpperCase());
-                    if (currentXmlTag.getValue() == "TypeOfPackaging")
+                    if (currentXmlTag.getValue().equals("TypeOfPackaging"))
                         package_.setTypeOfPackaging(getXMLText(reader));
-                    else if (currentXmlTag.getValue() == "AmountInPackage")
+                    else if (currentXmlTag.getValue().equals("AmountInPackage"))
                         package_.setAmountInPackage(Integer.parseInt(getXMLText(reader)));
-                    else if (currentXmlTag.getValue() == "Price")
+                    else if (currentXmlTag.getValue().equals("Price"))
                         package_.setPrice(Double.parseDouble(getXMLText(reader)));
                     break;
                 case XMLStreamConstants.END_ELEMENT:
                     name = reader.getLocalName();
-                    if (MedicineXmlTag.valueOf(name.toUpperCase()) == MedicineXmlTag.PACKAGE) {
+                    if (MedicineXmlTag.valueOf(name.toUpperCase()).equals(MedicineXmlTag.PACKAGE)) {
                         return package_;
                     }
             }
@@ -200,14 +200,14 @@ public class MedicineBuilder {
                 case XMLStreamConstants.START_ELEMENT:
                     name = reader.getLocalName();
                     MedicineXmlTag currentXmlTag = MedicineXmlTag.valueOf(name.toUpperCase());
-                    if (currentXmlTag.getValue() == "DrugDosage")
+                    if (currentXmlTag.getValue().equals("DrugDosage"))
                         dosage.setDrugDosage(getXMLText(reader));
-                    else if (currentXmlTag.getValue() == "FrequencyOfAdmission")
+                    else if (currentXmlTag.getValue().equals("FrequencyOfAdmission"))
                         dosage.setFrequencyOfAdmission(getXMLText(reader));
                     break;
                 case XMLStreamConstants.END_ELEMENT:
                     name = reader.getLocalName();
-                    if (MedicineXmlTag.valueOf(name.toUpperCase()) == MedicineXmlTag.DOSAGE) {
+                    if (MedicineXmlTag.valueOf(name.toUpperCase()).equals(MedicineXmlTag.DOSAGE)) {
                         return dosage;
                     }
             }

@@ -30,8 +30,8 @@ public class MedicinesStaxBuilder {
             reader = inputFactory.createXMLStreamReader(inputStream);
             // StAX parsing
             while (reader.hasNext()) {
-                int type = reader.next();
-                if (type == XMLStreamConstants.START_ELEMENT) {
+                Integer type = reader.next();
+                if (type.equals(XMLStreamConstants.START_ELEMENT)) {
                     name = reader.getLocalName();
                     if (name.equals(MedicineXmlTag.MEDICINE.getValue())) {
                         Medicine medicine = buildMedicine(reader);
@@ -63,7 +63,7 @@ public class MedicinesStaxBuilder {
                     break;
                 case XMLStreamConstants.END_ELEMENT:
                     name = reader.getLocalName();
-                    if (MedicineXmlTag.valueOf(name.toUpperCase()) == MedicineXmlTag.MEDICINE) {
+                    if (MedicineXmlTag.valueOf(name.toUpperCase()).equals(MedicineXmlTag.MEDICINE)) {
                         return medicine;
                     }
             }

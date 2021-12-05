@@ -30,7 +30,7 @@ public class ParsersTests {
             staxBuilder.buildSetMedicines("resourses/medicines.xml");
             Set<Medicine> medicines = staxBuilder.getMedicines();
             Medicine medicine2 = staxBuilder.getMedicines().iterator().next();
-            if (medicine2.getId() == "2") {
+            if (medicine2.getId().equals("2")) {
                 assertEquals("2", medicine2.getId());
                 assertEquals("Preparate_2", medicine2.getName());
                 assertEquals("Pharm_1", medicine2.getPharm());
@@ -57,7 +57,7 @@ public class ParsersTests {
             domBuilder.buildSetMedicines("resourses/medicines.xml");
             Set<Medicine> medicines = domBuilder.getMedicines();
             Medicine medicine2 = domBuilder.getMedicines().iterator().next();
-            if (medicine2.getId() == "2") {
+            if (medicine2.getId().equals("2")) {
                 assertEquals("2", medicine2.getId());
                 assertEquals("Preparate_2", medicine2.getName());
                 assertEquals("Pharm_1", medicine2.getPharm());
@@ -84,7 +84,7 @@ public class ParsersTests {
             saxBuilder.buildSetMedicines("resourses/medicines.xml");
             Set<Medicine> medicines = saxBuilder.getMedicines();
             Medicine medicine2 = saxBuilder.getMedicines().iterator().next();
-            if (medicine2.getId() == "2") {
+            if (medicine2.getId().equals("2")) {
                 assertEquals("2", medicine2.getId());
                 assertEquals("Preparate_2", medicine2.getName());
                 assertEquals("Pharm_1", medicine2.getPharm());
